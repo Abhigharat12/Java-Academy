@@ -1,0 +1,103 @@
+
+
+operators -- Symbols that perform operations on variables and values.
+operands -- Variables or values on which operators perform actions.
+operations -- The specific actions performed by operators, such as addition or comparison.
+
+Types of operators in Java:
+
+1) Arithmetic Operators  
+Used for mathematical calculations.  
+Examples:  
+    + (Addition): `int sum = 5 + 3; // sum = 8`  
+    - (Subtraction): `int diff = 5 - 3; // diff = 2`  
+    * (Multiplication): `int prod = 5 * 3; // prod = 15`  
+    / (Division): `int div = 6 / 3; // div = 2`  
+    % (Modulus): `int mod = 5 % 3; // mod = 2`  
+
+2) Relational or Comparison Operators  
+Used to compare two values.  
+Examples:  
+    > (Greater than): `5 > 3 // true`  
+    < (Less than): `5 < 3 // false`  
+    >= (Greater than or equal to): `5 >= 5 // true`  
+    <= (Less than or equal to): `5 <= 3 // false`  
+    == (Equal to): `5 == 5 // true`  
+    != (Not equal to): `5 != 3 // true`  
+
+3) Assignment Operators  
+Used to assign values to variables.  
+Examples:  
+    = (Assignment): `int a = 10;`  
+    += (Add and assign): `a += 5; // a = a + 5`  
+    -= (Subtract and assign): `a -= 2; // a = a - 2`  
+    *= (Multiply and assign): `a *= 3; // a = a * 3`  
+    /= (Divide and assign): `a /= 2; // a = a / 2`  
+    %= (Modulus and assign): `a %= 4; // a = a % 4`  
+
+4) Increment and Decrement Operators  
+Used to increase or decrease value by one.  
+
+Post-increment (x++):  
+The value is used first, then increased.  
+Example:  
+    int x = 5;  
+    int y = x++; // y = 5, x = 6  
+
+Pre-increment (++x):  
+The value is increased first, then used.  
+Example:  
+    int a = 5;  
+    int b = ++a; // a = 6, b = 6  
+
+Post-decrement (x--):  
+The value is used first, then decreased.  
+Example:  
+    int m = 5;  
+    int n = m--; // n = 5, m = 4  
+
+Pre-decrement (--x):  
+The value is decreased first, then used.  
+Example:  
+    int p = 5;  
+    int q = --p; // p = 4, q = 4  
+
+5) Logical Operators  
+Used for logical operations, mostly with boolean values.  
+Examples:  
+    && (Logical AND): `true && false // false`  
+    || (Logical OR): `true || false // true`  
+    ! (Logical NOT): `!true // false`  
+
+6) Bitwise Operators
+
+Bitwise operators work bit by bit on the binary representation of integers. They are useful for low-level programming, such as manipulating individual bits in flags or performing fast calculations.
+
+Common Bitwise Operators:
+
+- & (Bitwise AND): Performs AND operation on each bit. Result bit is 1 if both bits are 1.
+  Example: 5 & 3 (binary: 101 & 011 = 001) → 1
+
+- | (Bitwise OR): Performs OR operation on each bit. Result bit is 1 if at least one bit is 1.
+  Example: 5 | 3 (binary: 101 | 011 = 111) → 7
+
+- ~ (Bitwise NOT): Flips all bits (1's complement).
+  Example: ~5 (binary: ~101 = ...11111010) → -6 (in two's complement)
+
+- << (Left Shift): Shifts bits to the left by specified positions, filling with 0s.
+  Example: 5 << 1 (binary: 101 << 1 = 1010) → 10
+
+- >> (Right Shift): Shifts bits to the right by specified positions, filling with sign bit.
+  Example: 5 >> 1 (binary: 101 >> 1 = 010) → 2
+
+- >>> (Unsigned Right Shift): Shifts bits to the right, filling with 0s.
+  Example: -5 >>> 1 (binary: ...11111011 >>> 1 = 011... ) → large positive number
+
+Process for Bitwise Operations:
+1. Convert inputs to binary.
+2. Perform the specified operation bit by bit.
+3. Convert result back to decimal.
+
+Bitwise operators are efficient for tasks like checking flags, setting bits, or multiplying/dividing by powers of 2.
+
+
