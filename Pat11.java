@@ -15,7 +15,7 @@ public class Pat11 {
         }
     }
     public static void main(String[] args) {
-        HolloRect(4,5);
+        HolloRect(8,9);
     
     }
     
